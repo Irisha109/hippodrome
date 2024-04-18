@@ -8,7 +8,7 @@
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}: - %m%n"/>
             <TimeBasedTriggeringPolicy/>
             <DefaultRolloverStrategy>
-                <Delete basePath="logs" maxDept="2">
+                <Delete basePath="logs" >
                     <IfFileName glob="hippodrome.*.log"/>
                     <IfLastModified age="7d"/>
                 </Delete>
